@@ -16,14 +16,14 @@ export default function HeroSection() {
       className="w-full h-full object-cover absolute inset-0"
       alt="Hero background"
     />
-    <div className="relative z-10 flex  items-center justify-center h-full ">
+    <div className="relative z-10 flex  items-center justify-center h-full">
       <button
         onClick={handleClick}
-        className="bg-[#fda1a2] border border-[#fda1a2] shadow-[6px_6px_12px_#df6869] p-3 rounded-[5px] active:shadow-[inset_4px_4px_12px_#df6869] text-[#f15771] font-bold w-[100px]"
+        class="shadow-[6px_6px_12px_#df6869] p-3 rounded-md  active:shadow-[inset_4px_4px_12px_#df6869] text-[#f15771] font-bold w-[100px] "
       >
         <img
           src="src/assets/images/gift.png"
-          className="animate-bounce w-[50px]"
+          className="animate-bounce p-2"
         />
       </button>
     </div>
