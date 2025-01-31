@@ -18,8 +18,8 @@ export default function NumberCard() {
 
 ];
 
-    const handleClick = () =>{
-        navigate("/story")
+    const handleClick = (text) =>{
+        navigate(`/story${text}`)
     }
 
   return (
@@ -34,9 +34,10 @@ export default function NumberCard() {
               <img
                 src={gift.img}
                 className="object-cover h-full w-full rounded-t-lg "
+                alt={`Gift ${gift.text}`}
               />
               <div className="flex items-center justify-center mt-5">
-              <button onClick={handleClick} className="rounded-md shadow-[6px_6px_12px_#df6869] active:shadow-[inset_4px_4px_12px_#df6869] px-4 py-2 text-white font-semibold">{gift.text}</button>
+              <button onClick={()=>handleClick(gift.text)} className="rounded-md shadow-[6px_6px_12px_#df6869] active:shadow-[inset_4px_4px_12px_#df6869] px-4 py-2 text-white font-semibold">{gift.text}</button>
               </div>
             </div>
           </div>
